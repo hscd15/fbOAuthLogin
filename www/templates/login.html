@@ -1,6 +1,6 @@
 <ion-modal-view>
     <ion-header-bar>
-        <h1 class="title">Login</h1>
+        <h1 class="title">Account</h1>
         <div class="buttons">
             <button class="button button-clear" ng-click="closeLogin()">Close</button>
         </div>
@@ -8,14 +8,15 @@
     <ion-content>
         <form ng-controller="LoginCtrl">
             <label ng-if="!isAuthenticated()" class="item">
-                <button ng-click="authenticate('facebook')" class="button button-block button-positive" type="submit">Sign in with Facebook</button>
-                <h1>False</h1>
+                <button ng-click="authenticate('facebook')" class="button button-block button-positive" type="submit">Log in with Facebook</button>
+                <h1>No User is logged in :(</h1>
             </label>
 
             <label ng-if="isAuthenticated()" class="item">
-                <button ng-click="logOut()" class="button button-block button-positive" type="submit">Sign out of Facebook</button>
+                <button ng-click="logOut()" class="button button-block button-positive" type="submit">Log out of Facebook</button>
                 <h1>True</h1>
             </label>
+            
         </form>
     </ion-content>
 </ion-modal-view>
