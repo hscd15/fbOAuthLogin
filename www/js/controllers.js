@@ -61,8 +61,11 @@ angular.module('starter.controllers', [])
 
 .controller('PlaylistCtrl', function ($scope, $stateParams) {})
 
-.controller('LoginCtrl', function ($scope, $auth) {
+.controller('ProfileCtrl', function ($scope, $stateParams) {
 
+})
+
+.controller('LoginCtrl', function ($scope, $auth) {
     $scope.isAuthenticated = function () {
         return $auth.isAuthenticated();
     };
